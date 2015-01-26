@@ -7,21 +7,21 @@ package abstraction.inheritance.exercise;
 public abstract class Nominal extends Word {
     
     private Gender gender;
-    private NominalCase nominalCase;
+    private GrammaticalCase grammaticalCase;
     private GrammaticalNumber number;
     
-    public Nominal(String word, Gender gender, NominalCase nominalCase) {
+    public Nominal(String word, Gender gender, GrammaticalCase nominalCase) {
         super(word);
         this.gender = gender;
-        this.nominalCase = nominalCase;
+        this.grammaticalCase = nominalCase;
     }
     
     public Gender getGender() {
         return gender;
     }
 
-    public NominalCase getCase() {
-        return nominalCase;
+    public GrammaticalCase getCase() {
+        return grammaticalCase;
     }
 
     public GrammaticalNumber getNumber() {

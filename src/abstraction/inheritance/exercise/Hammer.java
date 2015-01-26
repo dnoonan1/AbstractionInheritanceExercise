@@ -2,37 +2,17 @@ package abstraction.inheritance.exercise;
 
 /**
  *
- * @author Dan
+ * @author Dan Noonan
  */
-public class Hammer extends HandTool {
-    
-    private int currentFunction; // ideally not an int, but for the exercise it
-                                 // works
-    
-    private void setCurrentFunction(int currentFunction) {
-        this.currentFunction = currentFunction;
-    }
+public abstract class Hammer implements Tool {
+    // other extensions include Sledgehammer, Warhammer
     
     public void use() {
-        switch (currentFunction) {
-            case 0:
-                hitNail();
-                break;
-            case 1:
-                removeNail();
-                break;
-            default:
-                throw new IllegalStateException("Illegal value for "
-                        + "currentFunction: " + currentFunction);
-        }
+        hammer();
     }
     
-    public void hitNail() {
-        // implement hitting a nail here
-    }
-    
-    public void removeNail() {
-        // implement removing a nail here
-    }
+    // Hammers are for "hammering" (pounding, hitting, etc.).
+    // Each subclass can implement it's method of hammering.
+    public abstract void hammer();
     
 }

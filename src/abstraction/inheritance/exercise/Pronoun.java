@@ -4,12 +4,12 @@ package abstraction.inheritance.exercise;
  *
  * @author Dan Noonan
  */
-public class Noun extends Nominal {
-    // Adjective is another extension of Nominal
+public class Pronoun extends Nominal {
+    // other extensions include Noun, Adjective
     
-    private static final String partOfSpeech = "n";
+    private static final String partOfSpeech = "pro.";
     
-    public Noun(String word, Gender gender, NominalCase nominalCase) {
+    public Pronoun(String word, Gender gender, GrammaticalCase nominalCase) {
         super(word, gender, nominalCase);
     }
     

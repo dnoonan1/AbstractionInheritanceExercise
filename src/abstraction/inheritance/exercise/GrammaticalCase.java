@@ -4,6 +4,6 @@ package abstraction.inheritance.exercise;
  *
  * @author Dan Noonan
  */
-public abstract class HandTool {
-    
+public enum GrammaticalCase {
+    NOMINATIVE, GENITIVE, DATIVE, ACCUSATIVE
 }
